@@ -1,6 +1,6 @@
 // import './App.css';
 import {Route,Switch} from "react-router-dom"
-import Product from './components/Product'
+import Product from './components/Product Page/Product'
 
 const App =()=>{
   return(

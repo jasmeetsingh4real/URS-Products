@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { FaStar ,FaArrowCircleRight,FaArrowCircleLeft} from 'react-icons/fa';
-import '../Styles/TripleGBStyle.css'
-import {SliderData} from '../Images/sliderData'
+import '../../Styles/TripleGBStyle.css'
+import {SliderData} from '../../Images/sliderData'
 export default function TripleGb() {
 
     const [current,setCurrent] = useState(0)
