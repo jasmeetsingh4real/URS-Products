@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/URS-Products/static/css/main.bb9221fb.chunk.css",
-    "main.js": "/URS-Products/static/js/main.669887a3.chunk.js",
-    "main.js.map": "/URS-Products/static/js/main.669887a3.chunk.js.map",
+    "main.css": "/URS-Products/static/css/main.85c3e055.chunk.css",
+    "main.js": "/URS-Products/static/js/main.9f690d1a.chunk.js",
+    "main.js.map": "/URS-Products/static/js/main.9f690d1a.chunk.js.map",
     "runtime-main.js": "/URS-Products/static/js/runtime-main.da6931c3.js",
     "runtime-main.js.map": "/URS-Products/static/js/runtime-main.da6931c3.js.map",
     "static/js/2.8c1490ee.chunk.js": "/URS-Products/static/js/2.8c1490ee.chunk.js",
     "static/js/2.8c1490ee.chunk.js.map": "/URS-Products/static/js/2.8c1490ee.chunk.js.map",
     "index.html": "/URS-Products/index.html",
-    "static/css/main.bb9221fb.chunk.css.map": "/URS-Products/static/css/main.bb9221fb.chunk.css.map",
+    "static/css/main.85c3e055.chunk.css.map": "/URS-Products/static/css/main.85c3e055.chunk.css.map",
     "static/js/2.8c1490ee.chunk.js.LICENSE.txt": "/URS-Products/static/js/2.8c1490ee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.da6931c3.js",
     "static/js/2.8c1490ee.chunk.js",
-    "static/css/main.bb9221fb.chunk.css",
-    "static/js/main.669887a3.chunk.js"
+    "static/css/main.85c3e055.chunk.css",
+    "static/js/main.9f690d1a.chunk.js"
   ]
 }
