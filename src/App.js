@@ -1,11 +1,13 @@
 // import './App.css';
 import {Route,Switch} from "react-router-dom"
-import Product from './components/Product Page/Product'
-
+import ProductPage from './components/Product-Page/ProductPage'
+import Purchase from './components/Purchase/Purchase'
 const App =()=>{
   return(
     <Switch>
-    <Route path="/" exact component={Product} />   
+    <Route exact path="/purchase" component={Purchase} />   
+    <Route exact path="/" component={ProductPage} />   
+    <Route default component={ProductPage} />   
     </Switch>
   )
 }

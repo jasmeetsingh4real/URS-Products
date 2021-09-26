@@ -2,8 +2,12 @@ import React,{useState} from 'react'
 import { FaStar ,FaArrowCircleRight,FaArrowCircleLeft} from 'react-icons/fa';
 import '../../Styles/TripleGBStyle.css'
 import {SliderData} from '../../Images/sliderData'
-export default function TripleGb() {
+import { useHistory } from 'react-router';
 
+
+
+export default function TripleGb() {
+    const history = new useHistory()
     const [current,setCurrent] = useState(0)
     const length = SliderData.length
 
@@ -14,10 +18,12 @@ console.log(current);
 const prevSlide = ()=>{
     setCurrent(current===0 ? length-1 : current-1)
 }
-  
+
 
 // const crasoulId = setInterval(()=>{
-// setCurrent((current === length-1 ? 0 : current+1))
+// setCurrent((prvs)=>{
+//     return (prvs === length-1 ? 0 : prvs+1)
+// })
 // },4000) 
 
 
@@ -77,8 +83,8 @@ const prevSlide = ()=>{
                     This process will show the actual benefits which will arise after doing proper Waste management for WET and DRY waste. For example, from Wet waste, we can produce Compost soil and TEA. From DRY waste, we can reuse and recycle the products. With the help of the respective Area Corporator, we will arrange a weekly market to showcase/Sell/Donate the by-products that are compost soil, Tea, and Reuse items that would get generated from this Wet and Dry Waste Management program.
                     </p>
                 </div>
-                    <button className="tgbBtn buyNow">Buy Now!</button>
-                    <button className="tgbBtn review">Review</button>
+                    <button className="tgbBtn buyNow" onClick={()=>{history.push("/purchase")}}>Buy Now!</button>
+                    <button className="tgbBtn review"  onClick={()=>{history.push("/purchase")}}>Review</button>
                 </div>
             </div>
         </div>
