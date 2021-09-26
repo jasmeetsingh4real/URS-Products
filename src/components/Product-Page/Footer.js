@@ -30,19 +30,19 @@ export default function Footer() {
             <section>
                 <h1>Follow us on</h1>
                 <span>
-                   <a href="http://twitter.com/theuniversalre3" target="_blank">
+                   <a href="http://twitter.com/theuniversalre3" target="_blank" rel="noreferrer">
                         <FaTwitter className="tgbSocialMedia"/>
                    </a> 
                    
-                   <a href="https://www.facebook.com/Universal-Recycle-Solution-104529538529409/" target="_blank">
+                   <a href="https://www.facebook.com/Universal-Recycle-Solution-104529538529409/" target="_blank" rel="noreferrer">
                         <FaFacebook className="tgbSocialMedia"/>
                    </a> 
 
-                   <a href="https://www.instagram.com/theuniversalrecyclesolutions/" target="_blank">
+                   <a href="https://www.instagram.com/theuniversalrecyclesolutions/" target="_blank" rel="noreferrer">
                         <FaInstagram className="tgbSocialMedia"/> 
                    </a> 
 
-                   <a href="https://www.linkedin.com/company/universal-recycle-solutions" target="_blank">
+                   <a href="https://www.linkedin.com/company/universal-recycle-solutions" target="_blank" rel="noreferrer">
                         <FaLinkedin className="tgbSocialMedia"/>
                    </a> 
                    
