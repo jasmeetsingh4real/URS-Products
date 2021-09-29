@@ -114,6 +114,9 @@ body {
   line-height: 1.8em;
   margin-bottom: 2em;
 }
+.placeOrder {
+  text-align: center;
+}
 .tgbBtn {
   font-family: "Montserrat", sans-serif;
   border: none;
@@ -133,12 +136,32 @@ body {
   color: white;
   background-color: #29b464;
 }
+.disabled {
+  background-color: #70eca4;
+  cursor: none;
+}
+.disabled:hover {
+  transform: scale(1);
+  cursor: auto;
+}
 .review {
   color: #0e7d3f;
   border: solid #29b464 1px;
 }
 .tgbHeadingPhone {
   display: none;
+}
+.FYI {
+  text-align: center;
+  font-size: 10px;
+  opacity: 1;
+}
+.FYI a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hide {
+  opacity: 0;
 }
 @media (max-width: 1000px) {
   .productInfo {
