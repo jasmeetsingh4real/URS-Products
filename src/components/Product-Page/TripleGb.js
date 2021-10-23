@@ -44,11 +44,11 @@ export default function TripleGb() {
   };
   return (
     <div className="tgbContainer">
-      <h1 className="tgbHeading darkGrey">PRODUCTS</h1>
+      <h1 className="tgbHeading darkGrey">OUR PRODUCT:</h1>
       <div className="tbgSubContainer">
         <div className="tgbHeadingPhone">
-          <h1 className="tgbMainHeading">Triple GB</h1>
-          <h4 className="tbgSubHeading midGrey">Wet Waste Garbage Bin</h4>
+          <h1 className="tgbMainHeading">Triple GB Bin</h1>
+          <h4 className="tbgSubHeading midGrey">Go Green with Garbage Bin</h4>
 
           <h5 className="ratingsLabel midGrey">Ratings:</h5>
           <div className="tgbStars">
@@ -79,8 +79,8 @@ export default function TripleGb() {
 
         <div className="productInfo">
           <div className="tgbHeadingDesktop">
-            <h1 className="tgbMainHeading">Triple GB</h1>
-            <h4 className="tbgSubHeading midGrey">Wet Waste Garbage Bin</h4>
+            <h1 className="tgbMainHeading">Triple GB Bin</h1>
+            <h4 className="tbgSubHeading midGrey">Go Green with Garbage Bin</h4>
 
             <h5 className="ratingsLabel midGrey">Ratings:</h5>
             <div className="tgbStars">
@@ -95,14 +95,16 @@ export default function TripleGb() {
           <div className="discription">
             <b className="darkGrey">Description:</b>
             <p className="darkGrey">
-              This process will show the actual benefits which will arise after
-              doing proper Waste management for WET and DRY waste. For example,
-              from Wet waste, we can produce Compost soil and TEA. From DRY
-              waste, we can reuse and recycle the products. With the help of the
-              respective Area Corporator, we will arrange a weekly market to
-              showcase/Sell/Donate the by-products that are compost soil, Tea,
-              and Reuse items that would get generated from this Wet and Dry
-              Waste Management program.
+              We have designed a Low Cost product called “TRIPLE G B BIN“ for
+              generating compost soil and tea from Wet Waste. This product will
+              be affordable to all classes of society especially to the major
+              class of poor people As a part of Social responsibility we are
+              planning to promote it on mass scale. We provide BIN along with
+              MICROBES. Our BINs are made of good quality FIBER PLASTIC, which
+              are easily available in the market and comes with different size
+              and capacity. We have designed BIN to have good supply of oxygen
+              for wet waste. This will help in the breakdown process that
+              produces nitrogen and hence prevents bad odour.
             </p>
           </div>
 
@@ -120,7 +122,7 @@ export default function TripleGb() {
           </button> */}
             <div className="FYI hide">
               <br />
-              You've alreay placed an order! Our team will respond shortly{" "}
+              You've already placed an order! Our team will respond shortly
               <br />
               <a href="#" onClick={handleAnotherResponse}>
                 send another response?
