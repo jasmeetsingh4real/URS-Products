@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.HeaderBackGround {
+  background-image: linear-gradient(to right, #1f4037, #99f2c8);
+  height: 60vh;
+  display: flex;
+}
+.headerContainer {
+  height: fit-content;
+  /* border: solid black 1px; */
+}
+.col1,
+.col2 {
+  width: 50vw;
+}
+.col1 {
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.col1 h1 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  line-height: 80%;
+}
+.col1 h3 {
+  color: #93ff90;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.orderButton {
+  margin-top: 5px;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  border: solid #fff 2px;
+  border-radius: 1rem;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+.orderButton:hover {
+  background-color: #fff;
+  color: #1f4037;
+  cursor: pointer;
+}
+.col2 {
+  padding: 0;
+  padding-left: 10%;
+  margin: 0;
+  height: 60vh;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.imageContainer {
+  top: 50px;
+  width: 250px;
+  height: 80%;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageContainer img {
+  height: 100%;
+  width: auto;
+}
+.imageContainer {
+  box-shadow: rgba(0, 0, 0, 0.63) 2px 2px 6px;
+  transition: 0.3s ease-in-out;
+}
+.imgHover {
+  box-shadow: rgba(0, 0, 0, 0.568) 6px 6px 12px;
+  transition: 0.3s ease-in-out;
+}
+.resize {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.discription {
+  margin: 10px 0;
+  padding: 20px 10%;
+}
+.discription h2 {
+  margin: 5px 0;
+}
+.discription p {
+  line-height: 30px;
+}
+@media (max-width: 700px) {
+  .col2 {
+    display: none;
+  }
+  .HeaderBackGround {
+    height: 30vh;
+  }
+  .col1 {
+    align-items: flex-start;
+    padding-left: 15%;
+    width: 100%;
+  }
+} ;

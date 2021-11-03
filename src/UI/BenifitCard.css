@@ -1,0 +1,32 @@
+.beniftsCard {
+  /* border: solid black; */
+  display: inline-block;
+  min-height: 350px;
+  height: fit-content;
+  width: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #e8fcf0;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 6px;
+}
+.beniftsCard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 10px;
+}
+.cardImageContainer {
+  height: 150px;
+  overflow: hidden;
+}
+.cardImageContainer img {
+  height: auto;
+  width: 100%;
+}
+.cardInfo {
+  padding: 10px;
+}
+.cardInfo p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,21 @@
+.hideNavBar {
+  transform: translateY(-100px);
+}
+.backBtn {
+  position: fixed;
+  z-index: 999999;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 477px) {
+  .backBtn {
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 1.3rem;
+  }
+}

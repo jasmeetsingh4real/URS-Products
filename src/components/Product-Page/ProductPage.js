@@ -1,15 +1,46 @@
-import React from "react";
-import BenifitAndUses from "./BenifitAndUses";
+import React, { useEffect, useState } from "react";
+import Benifits from "./Benifits";
 import Footer from "./Footer";
-import TripleGb from "./TripleGb";
+import TripleGB from "./TripleGB";
 import HowToUse from "./HowToUse";
+import Outputs from "./Outputs";
+import FeedBack from "./Feedback";
+import Uses from "./Uses";
+import Navbar from "../../UI/Navbar";
+import "./ProductPage.css";
+import { FaArrowLeft } from "react-icons/fa";
 export default function Product() {
+  const [nav, setNav] = useState(false);
+  const handleScroll = () => {
+    if (window.pageYOffset > 350) {
+      if (!nav) {
+        setNav(true);
+      }
+    } else {
+      if (nav || window.pageYOffset < 350) {
+        setNav(false);
+      }
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
-      <TripleGb />
-      <HowToUse />
-      <BenifitAndUses />
+    <>
+      <button className="backBtn">
+        <FaArrowLeft />
+      </button>
+      <Navbar className={nav ? "" : "hideNavBar"} />
+      <TripleGB />
+      {/* <HowToUse /> */}
+      {/* <hr /> */}
+      <Outputs />
+      <br />
+      <Benifits />
+      <Uses />
+      <FeedBack />
       <Footer />
-    </div>
+    </>
   );
 }
