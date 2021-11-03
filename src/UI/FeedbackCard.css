@@ -1,0 +1,47 @@
+.fdbox {
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px 0px #888888;
+  background-color: #ffffff;
+  font-size: medium;
+  padding: 20px;
+  margin: 30px;
+  min-height: 280px;
+  min-width: 250px;
+}
+/* top part of box     */
+.fdboxtop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* for image to be inserted in the box  */
+.fdboxtopimg {
+  display: flex;
+  justify-content: center;
+  /* background-color: #c4c4c4; */
+  width: 70px;
+  height: 70px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.fdboxtopimg img {
+  height: 100%;
+}
+/* client name  */
+.fdboxtoptext {
+  color: #22523c;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.fdboxdowntext {
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+}
+
+/* empty div used for aligning purpose */
+.fdboxtopemp {
+  width: 1px;
+}

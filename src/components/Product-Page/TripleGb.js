@@ -1,136 +1,96 @@
-import React, { useState } from "react";
-import { FaStar, FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
-import "../../Styles/TripleGBStyle.css";
-import { SliderData } from "../../Images/sliderData";
-import { useHistory } from "react-router";
-
-export default function TripleGb() {
-  const history = new useHistory();
-  const [current, setCurrent] = useState(0);
-  const length = SliderData.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+import styles from "./TripleGB.module.css";
+import { FaCartPlus } from "react-icons/fa";
+import binImg from "../../Images/binImg.jpg";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+const TripleGB = () => {
+  const [animateImg, setAnimateImg] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+  const zoomIn = () => {
+    setAnimateImg(true);
   };
-  console.log(current);
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const zoomOut = () => {
+    setAnimateImg(false);
   };
+  const prodImgClasses = `${styles.imageContainer} ${
+    animateImg ? `${styles.resize} ${styles.imgHover}` : ""
+  }`;
 
-  // const crasoulId = setInterval(()=>{
-  // setCurrent((prvs)=>{
-  //     return (prvs === length-1 ? 0 : prvs+1)
-  // })
-  // },4000)
-
-  const handleOrder = () => {
-    const orderBtn = document.querySelector(".buyNow");
-    const fyi = document.querySelector(".FYI");
-
-    if (!localStorage.getItem("isSubmitted")) {
-      history.push("/purchase");
-    } else {
-      orderBtn.classList.add("disabled");
-      fyi.classList.remove("hide");
-    }
+  const showMoreHandler = () => {
+    setShowMore(!showMore);
   };
-  const handleAnotherResponse = () => {
-    const fyi = document.querySelector(".FYI");
-    const orderBtn = document.querySelector(".buyNow");
-
-    orderBtn.classList.remove("disabled");
-    fyi.classList.add("hide");
-    localStorage.clear();
-  };
+  const history = useHistory();
+  const MoreContent = (
+    <>
+      <p>
+        Triple GB bins are simple and easily handled. We would be reading more
+        about it, Initial step is to chop all the leftover vegetables and fruits
+        and put them in Triple GB bin directly or dry them beforehand in
+        sunlight. Avoid depositing coconut shells, plastic, napkins, soil, and
+        spoiled milk, or any liquid food.
+      </p>
+      <br />
+      <p>
+        <h2>Pros:</h2>
+        Essential benefit of Triple GB is that it helps you to make eco-friendly
+        compost product by your own, we are just providing things for making
+        compost. It enriches soil and helping retain moisture and suppress plant
+        diseases. It also helps in reducing the need for chemical fertilizers.
+        It also reduces methane emissions from landfills and lowers carbon
+        footprint. Triple GB creates awareness in the society regarding the
+        benefits of proper waste management, the better quality of soil will in
+        turn, give better yield of crops/plants, no chemical fertilizers must be
+        used or consumed to promote a healthy and organic lifestyle. Triple GB
+        is smell free and affordable for everyone. This conserves our natural
+        resources such as timber, water and minerals.
+      </p>
+    </>
+  );
   return (
-    <div className="tgbContainer">
-      <h1 className="tgbHeading darkGrey">OUR PRODUCT:</h1>
-      <div className="tbgSubContainer">
-        <div className="tgbHeadingPhone">
-          <h1 className="tgbMainHeading">Triple GB Bin</h1>
-          <h4 className="tbgSubHeading midGrey">Go Green with Garbage Bin</h4>
-
-          <h5 className="ratingsLabel midGrey">Ratings:</h5>
-          <div className="tgbStars">
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStar className="star" />
-          </div>
-        </div>
-
-        <div className="imageContainer">
-          <FaArrowCircleLeft className="leftArrow" onClick={prevSlide} />
-          <FaArrowCircleRight className="rightArrow" onClick={nextSlide} />
-          {SliderData.map((slide, index) => {
-            return (
-              <div
-                className={index === current ? "slide active" : "slide"}
-                key={index}
-              >
-                {index === current && (
-                  <img src={slide.image} alt="prod_image" />
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="productInfo">
-          <div className="tgbHeadingDesktop">
-            <h1 className="tgbMainHeading">Triple GB Bin</h1>
-            <h4 className="tbgSubHeading midGrey">Go Green with Garbage Bin</h4>
-
-            <h5 className="ratingsLabel midGrey">Ratings:</h5>
-            <div className="tgbStars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-            </div>
-          </div>
-
-          <div className="discription">
-            <b className="darkGrey">Description:</b>
-            <p className="darkGrey">
-              We have designed a Low Cost product called “TRIPLE G B BIN“ for
-              generating compost soil and tea from Wet Waste. This product will
-              be affordable to all classes of society especially to the major
-              class of poor people As a part of Social responsibility we are
-              planning to promote it on mass scale. We provide BIN along with
-              MICROBES. Our BINs are made of good quality FIBER PLASTIC, which
-              are easily available in the market and comes with different size
-              and capacity. We have designed BIN to have good supply of oxygen
-              for wet waste. This will help in the breakdown process that
-              produces nitrogen and hence prevents bad odour.
-            </p>
-          </div>
-
-          <div className="placeOrder">
-            <button className="tgbBtn buyNow" onClick={handleOrder}>
-              Place Order
-            </button>
-            {/* <button
-            className="tgbBtn review"
-            onClick={() => {
-              history.push("/purchase");
-            }}
+    <div className={styles.headerContainer}>
+      <div
+        className={styles.HeaderBackGround}
+        onMouseEnter={zoomIn}
+        onMouseLeave={zoomOut}
+      >
+        <div className={styles.col1}>
+          <h1>TRIPLE GB</h1>
+          <h3>WET WASTE GARBAGE BIN</h3>
+          <button
+            className={styles.orderButton}
+            onClick={() => history.push("/purchase")}
           >
-            Review
-          </button> */}
-            <div className="FYI hide">
-              <br />
-              You've already placed an order! Our team will respond shortly
-              <br />
-              <a href="#" onClick={handleAnotherResponse}>
-                send another response?
-              </a>
-            </div>
+            Place order <FaCartPlus />
+          </button>
+        </div>
+        <div className={styles.col2}>
+          <div className={prodImgClasses}>
+            <img src={binImg} alt="" />
           </div>
         </div>
       </div>
+
+      <div className={styles.discription}>
+        <h2>Discription:</h2>
+        <p>
+          Triple GB bin stands for “Go Green with Garbage Bin.” Triple GB is
+          more focused on being a solution for society by reducing degradable
+          waste and by making it reusable. It includes products such as,
+          ‘Sanjeevani Booti' which are meant for dead plants and infertile
+          lands. Triple GB is a cost-effective product formed to generate
+          compost soil and tea for wet waste, so this is affordable for every
+          class of society. Triple GB Bins are formed with good quality fiber
+          plastic along with microbes. We have designed BIN in such a way that
+          it has a good supply of oxygen for wet waste. This helps in the
+          breakdown process that produces nitrogen and hence prevents bad odor.
+          {showMore && MoreContent}
+        </p>
+
+        <button className={styles.moreBtn} onClick={showMoreHandler}>
+          {showMore ? "Show less" : "Show more"}
+        </button>
+      </div>
     </div>
   );
-}
+};
+export default TripleGB;

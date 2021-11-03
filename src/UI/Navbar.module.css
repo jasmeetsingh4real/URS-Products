@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  background-image: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #fff;
+  justify-content: space-between;
+  padding: 5px 50px;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.726);
+  transition: 0.2s ease-in-out;
+  transform: translateY(0);
+  z-index: 9999;
+}
+
+.orderBtn {
+  margin-top: 5px;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  border: solid #fff 2px;
+  border-radius: 1rem;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+.orderBtn:hover {
+  background-color: #fff;
+  color: #1f4037;
+
+  cursor: pointer;
+}
+.brand h1 {
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 130%;
+}
+@media (max-width: 477px) {
+  .navbar {
+    align-items: center;
+    padding: 0 5px;
+    padding-left: 45px;
+  }
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  .orderBtn {
+    padding: 5px 10px;
+  }
+}

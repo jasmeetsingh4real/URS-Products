@@ -1,23 +1,14 @@
-import React, { useState } from "react";
-
+import "./BenifitCard.css";
 const BenifitCard = (props) => {
-  const [isDescVisible, setisDescVisible] = useState(false);
-
-  const handleDesc = () => {
-    setisDescVisible(!isDescVisible);
-    console.log("working");
-  };
-
   return (
-    <div
-      className={props.className}
-      onMouseEnter={handleDesc}
-      //   onBlur={handleDesc}
-      onMouseLeave={handleDesc}
-    >
-      <span>{props.title}</span>
-
-      {isDescVisible && props.description}
+    <div className="beniftsCard" key={props.key}>
+      <div className="cardImageContainer">
+        <img src={props.img} alt="" />
+      </div>
+      <div className="cardInfo">
+        <h3>{props.title}</h3>
+        <p>{props.description}</p>
+      </div>
     </div>
   );
 };

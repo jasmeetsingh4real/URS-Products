@@ -1,0 +1,59 @@
+.benifitsContainer {
+  height: fit-content;
+  background-image: linear-gradient(to right, #1f4037, #99f2c8);
+}
+.benifitsContainer_row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.benifitsContainer_row1 h1 {
+  font-weight: 300;
+  font-size: 4rem;
+}
+.img_container {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 2% 10%;
+  height: 150px;
+  overflow: hidden;
+  width: 150px;
+}
+.img_container img {
+  height: 100%;
+}
+.benifits_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5% 0%;
+  height: fit-content;
+}
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .benifits_cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .benifits_cards {
+    overflow-x: scroll;
+    padding: 10% 10%;
+  }
+  .CardContainer {
+    margin: 0 20px;
+  }
+  .benifitsContainer_row1 h1 {
+    padding: 0 20px;
+    font-size: 2rem;
+  }
+  .img_container {
+    height: 100px;
+    width: 100px;
+  }
+}
