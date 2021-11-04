@@ -1,19 +1,19 @@
-import "./Outputs.css";
 import compostTeaImg from "../../Images/Outputs/CompostTea.PNG";
 import compostSoilImg from "../../Images/Outputs/CompostSoil.PNG";
+import styles from "./Outputs.module.css";
 const Outputs = () => {
   return (
     <>
-      <h2 className="Outputs_heading">Outputs Of Triple GB:</h2>
-      <div className="Output">
-        <div className="outputs_col1">
+      <h2 className={styles.Outputs_heading}>Outputs Of Triple GB:</h2>
+      <div className={styles.Output}>
+        <div className={styles.outputs_col1}>
           <h1>1.Compost Soil</h1>
-          <div className="output_img">
+          <div className={styles.output_img}>
             <img src={compostSoilImg} alt="" />
           </div>
         </div>
-        <div className="outputs_col2">
-          <ul className="Output_list">
+        <div className={styles.outputs_col2}>
+          <ul className={styles.Output_list}>
             <li>
               Rich organic manure that can be used as putting soil, instead of
               conventional soil as a planting media.
@@ -27,15 +27,15 @@ const Outputs = () => {
         </div>
       </div>
 
-      <div className="Output revFlex">
-        <div className="outputs_col1">
+      <div className={styles[("Output", "revFlex")]}>
+        <div className={styles.outputs_col1}>
           <h1>2.Compost Tea</h1>
-          <div className="output_img">
+          <div className={styles.output_img}>
             <img src={compostTeaImg} alt="" />
           </div>
         </div>
-        <div className="outputs_col2">
-          <ul className="Output_list">
+        <div className={styles.outputs_col2}>
+          <ul className={styles.Output_list}>
             <li>
               The taps of all triple GB bins should be opened once a week for
               15mins
