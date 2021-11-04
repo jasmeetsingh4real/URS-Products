@@ -12,7 +12,7 @@
   z-index: 9999;
 }
 
-.orderBtn {
+.orderButton {
   margin-top: 5px;
   background: none;
   color: #fff;
@@ -36,6 +36,16 @@
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 130%;
+}
+.promptMessage {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+  font-size: 0.7rem;
+}
+.promptMessage .link {
+  text-decoration: underline;
+  cursor: pointer;
 }
 @media (max-width: 477px) {
   .navbar {

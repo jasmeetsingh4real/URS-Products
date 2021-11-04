@@ -1,11 +1,12 @@
 import styles from "./TripleGB.module.css";
 import { FaCartPlus } from "react-icons/fa";
 import binImg from "../../Images/binImg.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 const TripleGB = () => {
   const [animateImg, setAnimateImg] = useState(false);
   const [showMore, setShowMore] = useState(false);
+  const [orderPlaced, setOrderPlaced] = useState(false);
   const zoomIn = () => {
     setAnimateImg(true);
   };
@@ -20,6 +21,14 @@ const TripleGB = () => {
     setShowMore(!showMore);
   };
   const history = useHistory();
+  const handlePlaceOrder = () => {
+    if (localStorage.getItem("isSubmitted")) {
+      setOrderPlaced(true);
+    } else {
+      setOrderPlaced(false);
+      history.push("/purchase");
+    }
+  };
   const MoreContent = (
     <>
       <p>
@@ -46,6 +55,23 @@ const TripleGB = () => {
       </p>
     </>
   );
+  const orderBtnClasses = orderPlaced
+    ? `${styles.Disabled}  `
+    : `${styles.orderButton}`;
+
+  const resetOrder = () => {
+    setOrderPlaced(false);
+    localStorage.removeItem("isSubmitted");
+  };
+  const prompt = (
+    <div className={styles.promptMessage}>
+      <p>You've already placed an order! </p>
+      <p onClick={resetOrder} className={styles.link}>
+        send another response?
+      </p>
+    </div>
+  );
+
   return (
     <div className={styles.headerContainer}>
       <div
@@ -57,11 +83,13 @@ const TripleGB = () => {
           <h1>TRIPLE GB</h1>
           <h3>WET WASTE GARBAGE BIN</h3>
           <button
-            className={styles.orderButton}
-            onClick={() => history.push("/purchase")}
+            className={orderBtnClasses}
+            onClick={handlePlaceOrder}
+            disabled={orderPlaced ? true : false}
           >
             Place order <FaCartPlus />
           </button>
+          {orderPlaced && prompt}
         </div>
         <div className={styles.col2}>
           <div className={prodImgClasses}>

@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import "../../Styles/purchaseStyle.css";
 import Footer from "../Product-Page/Footer";
 export default function Purchase() {
-  const Email = "sampleemail@gmail.com";
+  const Email = "universalrecycle24@gmail.com";
 
   const history = new useHistory();
 
