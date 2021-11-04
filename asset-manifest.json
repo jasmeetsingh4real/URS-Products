@@ -1,20 +1,33 @@
 {
   "files": {
-    "main.css": "/URS-Products/static/css/main.678ae1c8.chunk.css",
-    "main.js": "/URS-Products/static/js/main.b4284031.chunk.js",
-    "main.js.map": "/URS-Products/static/js/main.b4284031.chunk.js.map",
+    "main.css": "/URS-Products/static/css/main.883b4c5c.chunk.css",
+    "main.js": "/URS-Products/static/js/main.47799e06.chunk.js",
+    "main.js.map": "/URS-Products/static/js/main.47799e06.chunk.js.map",
     "runtime-main.js": "/URS-Products/static/js/runtime-main.da6931c3.js",
     "runtime-main.js.map": "/URS-Products/static/js/runtime-main.da6931c3.js.map",
-    "static/js/2.e33f5403.chunk.js": "/URS-Products/static/js/2.e33f5403.chunk.js",
-    "static/js/2.e33f5403.chunk.js.map": "/URS-Products/static/js/2.e33f5403.chunk.js.map",
+    "static/js/2.4c29f60e.chunk.js": "/URS-Products/static/js/2.4c29f60e.chunk.js",
+    "static/js/2.4c29f60e.chunk.js.map": "/URS-Products/static/js/2.4c29f60e.chunk.js.map",
     "index.html": "/URS-Products/index.html",
-    "static/css/main.678ae1c8.chunk.css.map": "/URS-Products/static/css/main.678ae1c8.chunk.css.map",
-    "static/js/2.e33f5403.chunk.js.LICENSE.txt": "/URS-Products/static/js/2.e33f5403.chunk.js.LICENSE.txt"
+    "static/css/main.883b4c5c.chunk.css.map": "/URS-Products/static/css/main.883b4c5c.chunk.css.map",
+    "static/js/2.4c29f60e.chunk.js.LICENSE.txt": "/URS-Products/static/js/2.4c29f60e.chunk.js.LICENSE.txt",
+    "static/media/CompostSoil.75c2a9ca.PNG": "/URS-Products/static/media/CompostSoil.75c2a9ca.PNG",
+    "static/media/CompostTea.c39f8873.PNG": "/URS-Products/static/media/CompostTea.c39f8873.PNG",
+    "static/media/GoGreen.d3a1ea2e.PNG": "/URS-Products/static/media/GoGreen.d3a1ea2e.PNG",
+    "static/media/Plant-Icon.65e75a5b.jpg": "/URS-Products/static/media/Plant-Icon.65e75a5b.jpg",
+    "static/media/Varsha.ef3f75f6.jpg": "/URS-Products/static/media/Varsha.ef3f75f6.jpg",
+    "static/media/b1.46254d19.jpg": "/URS-Products/static/media/b1.46254d19.jpg",
+    "static/media/b2.05a8213a.jpg": "/URS-Products/static/media/b2.05a8213a.jpg",
+    "static/media/b5.99099588.jpg": "/URS-Products/static/media/b5.99099588.jpg",
+    "static/media/b6.b5013275.jpg": "/URS-Products/static/media/b6.b5013275.jpg",
+    "static/media/binImg.469f8b7a.jpg": "/URS-Products/static/media/binImg.469f8b7a.jpg",
+    "static/media/msDhawad.762d3329.jpg": "/URS-Products/static/media/msDhawad.762d3329.jpg",
+    "static/media/pojaPathak.ee1bfbac.jpg": "/URS-Products/static/media/pojaPathak.ee1bfbac.jpg",
+    "static/media/saritaChache.c8e0221b.jpg": "/URS-Products/static/media/saritaChache.c8e0221b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.da6931c3.js",
-    "static/js/2.e33f5403.chunk.js",
-    "static/css/main.678ae1c8.chunk.css",
-    "static/js/main.b4284031.chunk.js"
+    "static/js/2.4c29f60e.chunk.js",
+    "static/css/main.883b4c5c.chunk.css",
+    "static/js/main.47799e06.chunk.js"
   ]
 }
