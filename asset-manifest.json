@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/URS-Products/static/css/main.883b4c5c.chunk.css",
-    "main.js": "/URS-Products/static/js/main.4b4bf341.chunk.js",
-    "main.js.map": "/URS-Products/static/js/main.4b4bf341.chunk.js.map",
+    "main.css": "/URS-Products/static/css/main.049ca5f1.chunk.css",
+    "main.js": "/URS-Products/static/js/main.7eb9529b.chunk.js",
+    "main.js.map": "/URS-Products/static/js/main.7eb9529b.chunk.js.map",
     "runtime-main.js": "/URS-Products/static/js/runtime-main.da6931c3.js",
     "runtime-main.js.map": "/URS-Products/static/js/runtime-main.da6931c3.js.map",
-    "static/js/2.4c29f60e.chunk.js": "/URS-Products/static/js/2.4c29f60e.chunk.js",
-    "static/js/2.4c29f60e.chunk.js.map": "/URS-Products/static/js/2.4c29f60e.chunk.js.map",
+    "static/js/2.acfba8e5.chunk.js": "/URS-Products/static/js/2.acfba8e5.chunk.js",
+    "static/js/2.acfba8e5.chunk.js.map": "/URS-Products/static/js/2.acfba8e5.chunk.js.map",
     "index.html": "/URS-Products/index.html",
-    "static/css/main.883b4c5c.chunk.css.map": "/URS-Products/static/css/main.883b4c5c.chunk.css.map",
-    "static/js/2.4c29f60e.chunk.js.LICENSE.txt": "/URS-Products/static/js/2.4c29f60e.chunk.js.LICENSE.txt",
+    "static/css/main.049ca5f1.chunk.css.map": "/URS-Products/static/css/main.049ca5f1.chunk.css.map",
+    "static/js/2.acfba8e5.chunk.js.LICENSE.txt": "/URS-Products/static/js/2.acfba8e5.chunk.js.LICENSE.txt",
     "static/media/CompostSoil.75c2a9ca.PNG": "/URS-Products/static/media/CompostSoil.75c2a9ca.PNG",
     "static/media/CompostTea.c39f8873.PNG": "/URS-Products/static/media/CompostTea.c39f8873.PNG",
     "static/media/GoGreen.d3a1ea2e.PNG": "/URS-Products/static/media/GoGreen.d3a1ea2e.PNG",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da6931c3.js",
-    "static/js/2.4c29f60e.chunk.js",
-    "static/css/main.883b4c5c.chunk.css",
-    "static/js/main.4b4bf341.chunk.js"
+    "static/js/2.acfba8e5.chunk.js",
+    "static/css/main.049ca5f1.chunk.css",
+    "static/js/main.7eb9529b.chunk.js"
   ]
 }
