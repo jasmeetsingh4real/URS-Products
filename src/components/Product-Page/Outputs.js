@@ -5,7 +5,7 @@ const Outputs = () => {
   return (
     <>
       <h2 className="Outputs_heading">Outputs Of Triple GB:</h2>
-      <div className="Output ">
+      <div className="Output">
         <div className="outputs_col1">
           <h1>1.Compost Soil</h1>
           <div className="output_img">

@@ -24,7 +24,7 @@ export default function Product() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   return (
     <>

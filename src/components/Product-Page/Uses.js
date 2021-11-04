@@ -25,7 +25,6 @@ const Uses = () => {
   return (
     <>
       <h1 className="bhead">USES OF Triple Gb</h1>
-
       <div className="bUse">
         <div className="col1">{UsesCards}</div>
         <br />

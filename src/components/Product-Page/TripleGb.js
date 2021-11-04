@@ -1,7 +1,7 @@
 import styles from "./TripleGB.module.css";
 import { FaCartPlus } from "react-icons/fa";
 import binImg from "../../Images/binImg.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router-dom";
 const TripleGB = () => {
   const [animateImg, setAnimateImg] = useState(false);
