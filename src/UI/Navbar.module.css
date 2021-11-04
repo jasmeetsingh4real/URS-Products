@@ -24,7 +24,7 @@
   font-weight: 300;
   transition: 0.3s ease-in-out;
 }
-.orderBtn:hover {
+.orderButton:hover {
   background-color: #fff;
   color: #1f4037;
 
