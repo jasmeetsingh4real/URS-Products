@@ -5,10 +5,17 @@ html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
-.container {
-  /* background-color: black; */
+.PurchaseFormContainer {
+  width: 100%;
   padding: 0 10%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.PurchaseFormContainer::-webkit-scrollbar {
+  display: none;
 }
 .backButtom {
   position: fixed;
@@ -46,11 +53,6 @@ html {
   margin-bottom: 15px;
   font-size: 12px;
   /* transition: 0.3s all; */
-}
-.cover-bg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .section_padding {

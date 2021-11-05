@@ -39,8 +39,8 @@ const TripleGB = () => {
         spoiled milk, or any liquid food.
       </p>
       <br />
+      <h2>Pros:</h2>
       <p>
-        <h2>Pros:</h2>
         Essential benefit of Triple GB is that it helps you to make eco-friendly
         compost product by your own, we are just providing things for making
         compost. It enriches soil and helping retain moisture and suppress plant
@@ -111,9 +111,8 @@ const TripleGB = () => {
           plastic along with microbes. We have designed BIN in such a way that
           it has a good supply of oxygen for wet waste. This helps in the
           breakdown process that produces nitrogen and hence prevents bad odor.
-          {showMore && MoreContent}
         </p>
-
+        {showMore && MoreContent}
         <button className={styles.moreBtn} onClick={showMoreHandler}>
           {showMore ? "Show less" : "Show more"}
         </button>

@@ -1,0 +1,42 @@
+.HowToUse_heading {
+  padding-left: 10%;
+}
+.HowToUse_container {
+  margin: 0 10%;
+  display: flex;
+}
+.HowToUse_col1 {
+  padding: 40px;
+  height: 400px;
+}
+.HowToUse_col1 img {
+  height: 100%;
+}
+.HowToUse_col2 {
+  height: 400px;
+  border: solid rgba(197, 195, 195, 0.39) 1px;
+  overflow-y: scroll;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.HowToUse_col2::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .HowToUse_container {
+    display: block;
+  }
+  .HowToUse_col1 {
+    display: none;
+  }
+  .HowToUse_col2 {
+    margin: 30px 0;
+    width: 100%;
+  }
+  .HowToUse_col2 ul {
+    text-decoration: none;
+    list-style: none;
+  }
+}

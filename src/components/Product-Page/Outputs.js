@@ -2,6 +2,7 @@ import compostTeaImg from "../../Images/Outputs/CompostTea.PNG";
 import compostSoilImg from "../../Images/Outputs/CompostSoil.PNG";
 import styles from "./Outputs.module.css";
 const Outputs = () => {
+  const row2Classes = `${styles.Output} ${styles.revFlex}`;
   return (
     <>
       <h2 className={styles.Outputs_heading}>Outputs Of Triple GB:</h2>
@@ -27,7 +28,7 @@ const Outputs = () => {
         </div>
       </div>
 
-      <div className={styles[("Output", "revFlex")]}>
+      <div className={row2Classes}>
         <div className={styles.outputs_col1}>
           <h1>2.Compost Tea</h1>
           <div className={styles.output_img}>

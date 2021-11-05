@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import "../../Styles/purchaseStyle.css";
-import Footer from "../Product-Page/Footer";
 export default function Purchase() {
   const Email = "universalrecycle24@gmail.com";
 
@@ -53,7 +52,7 @@ export default function Purchase() {
 
   return (
     <div>
-      <section className="purchase section_padding cover-bg">
+      <section className="PurchaseFormContainer section_padding cover-bg">
         <div className="container">
           <div className="row">
             <div className="section_title text-center">
@@ -137,8 +136,9 @@ export default function Purchase() {
                         className="btn"
                         onClick={handleSubmit}
                       >
-                        Submit
+                        Send Email
                       </button>
+                      <p></p>
                     </div>
                   </div>
                 </form>
@@ -168,7 +168,6 @@ export default function Purchase() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

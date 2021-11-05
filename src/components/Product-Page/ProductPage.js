@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Benifits from "./Benifits";
-import Footer from "./Footer";
 import TripleGB from "./TripleGB";
 import HowToUse from "./HowToUse";
 import Outputs from "./Outputs";
@@ -24,7 +23,7 @@ export default function Product() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+  });
 
   return (
     <>
@@ -33,14 +32,13 @@ export default function Product() {
       </button>
       <Navbar className={nav ? "" : "hideNavBar"} />
       <TripleGB />
-      {/* <HowToUse /> */}
+      <HowToUse />
       {/* <hr /> */}
       <Outputs />
       <br />
       <Benifits />
       <Uses />
       <FeedBack />
-      <Footer />
     </>
   );
 }
