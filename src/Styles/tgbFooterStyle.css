@@ -1,68 +1,91 @@
-/* 29B464 404040 0E7D3F */
-.tgbContactUs {
-  padding: 1% 5%;
-  background-color: #29b464;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-.tgbContactUs h1 {
-  font-weight: normal;
-  font-size: 24px;
-  margin: 10px 0;
-  margin-bottom: 5px;
-}
-.tgbContactUs h3 {
-  display: inline-block;
-  color: white;
-  margin: 5px 0;
-  margin-right: 20px;
-  font-weight: 400;
-}
-.tgbFooterLinks {
-  font-size: 15px;
-  padding: 3% 1%;
-  background-image: linear-gradient(to right, #000000, #404040);
-  color: white;
+.TripleGB_footer {
   display: flex;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  padding: 30px;
   justify-content: space-between;
 }
-
-.tgbSocialMedia {
-  font-size: 25px;
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-.tgbSocialMedia:hover {
-  transform: scale(0.9);
-}
-.tgbFooterLinks section:nth-of-type(2) {
+.TripleBG_footer_row1 {
+  width: 40%;
+  justify-content: space-between;
   display: flex;
-  align-items: flex-end;
 }
-@media (max-width: 800px) {
-  .tgbContactUs {
-    padding: 2% 3%;
-    padding-right: 0;
-  }
-  .tgbContactUs h3 {
-    font-size: 15px;
-  }
-  .tgbFooterLinks {
-    flex-direction: column;
-    align-items: center;
-  }
-  .tgbFooterLinks section:nth-of-type(1) {
-    text-align: center;
+.TripleGB_footer_Brand {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.TripleGB_footer_links a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.TripleGB_footer_contacts {
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.TripleGB_footer_cp {
+  padding-left: 30px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+.TripleGB_footer_reviewForm {
+  display: flex;
+  flex-direction: column;
+}
+.TripleGB_footer_reviewForm textarea {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid rgb(58, 58, 58) 1px;
+  width: 250px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  height: fit-content;
+  background-color: #fff;
+}
+
+.TripleGB_footer_reviewForm textarea::placeholder {
+  color: rgb(126, 126, 126);
+  font-family: "Montserrat", sans-serif;
+}
+.TripleGB_footer_reviewForm button {
+  margin: 1.5% 0;
+  width: fit-content;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #29b464;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .TripleBG_footer_row1 {
     width: 100%;
-    border-bottom: solid 1px white;
-    padding-bottom: 15px;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
-  .tgbFooterLinks section:nth-of-type(1) ul,
-  .tgbFooterLinks section:nth-of-type(2) ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
+  .TripleGB_footer {
+    display: block;
+  }
+}
+@media (max-width: 455px) {
+  .TripleGB_footer {
+    padding: 10px;
+  }
+  .TripleBG_footer_row1 {
+    display: block;
+  }
+  .TripleGB_footer_contacts {
     padding: 0;
+    margin: 15px 0;
+  }
+  .TripleGB_footer_reviewForm textarea {
+    width: 100%;
   }
 }

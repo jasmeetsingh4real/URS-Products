@@ -11,7 +11,7 @@ const FeedbackCard = (props) => {
     <div className="fdbox">
       <div className="fdboxtop">
         <div className="fdboxtopimg">
-          <img src={DefaultPic} alt="user image" />
+          <img src={DefaultPic} alt="user" />
         </div>
         <div className="fdboxtoptext">{props.name}</div>
         {/* <div className="fdboxtopemp"></div> */}
